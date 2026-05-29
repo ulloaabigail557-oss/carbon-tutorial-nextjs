@@ -1,0 +1,29 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+
+.info-card {
+  margin-top: $spacing-09;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-down(md) {
+    margin-top: $spacing-06;
+  }
+
+  &__icon {
+    margin-bottom: $spacing-05;
+  }
+
+  &__heading {
+    @include type-style('productive-heading-03');
+    margin-bottom: $spacing-03;
+  }
+
+  &__body {
+    @include type-style('body-long-01');
+    margin-top: 0;
+  }
+}
+
+// Made with Bob
